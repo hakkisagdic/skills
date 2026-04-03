@@ -1,482 +1,8 @@
 {
   "repoUrl": "",
-  "lastUpdate": 1775101030872,
+  "lastUpdate": 1775187560829,
   "entries": {
     "Efficiency": [
-      {
-        "benches": [
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 44.9,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 54601.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 43.2,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 54495.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 103.3,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 266870.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 72.1,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 189001.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 14.1,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 27938.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 16.2,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 27827.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Tokens In"
-          },
-          {
-            "value": 29.5,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Time"
-          },
-          {
-            "value": 50689.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Tokens In"
-          },
-          {
-            "value": 21.2,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Time"
-          },
-          {
-            "value": 46469.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Tokens In"
-          },
-          {
-            "unit": "seconds",
-            "value": 68.7,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Time"
-          },
-          {
-            "unit": "tokens",
-            "value": 54939.0,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Tokens In"
-          },
-          {
-            "unit": "seconds",
-            "value": 55.6,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Time"
-          },
-          {
-            "unit": "tokens",
-            "value": 54762.0,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 16.4,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 28292.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 24.6,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 46760.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 44.0,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 113699.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 69.4,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 195957.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 40.9,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 57306.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Tokens In"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 44.0,
-            "unit": "seconds",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Time"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 57476.0,
-            "unit": "tokens",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Tokens In"
-          }
-        ],
-        "tool": "customSmallerIsBetter",
-        "model": "claude-opus-4.6",
-        "commit": {
-          "message": "Improve the build-perf-diag scenario test (#404)",
-          "id": "101a151e9815113841a97a52576b3cb3a8755616",
-          "author": {
-            "username": "JanKrivanek",
-            "name": "Jan Krivanek"
-          },
-          "timestamp": "2026-03-19T15:01:22+00:00",
-          "url": "https://github.com/dotnet/skills/commit/101a151e9815113841a97a52576b3cb3a8755616"
-        },
-        "date": 1773947321466
-      },
-      {
-        "benches": [
-          {
-            "overfitting": "moderate",
-            "value": 48.1,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 76400.0,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 45.1,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 54499.0,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "unit": "seconds",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Time",
-            "overfitting": "moderate",
-            "value": 90.9
-          },
-          {
-            "unit": "tokens",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Tokens In",
-            "overfitting": "moderate",
-            "value": 233231.0
-          },
-          {
-            "unit": "seconds",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Time",
-            "overfitting": "moderate",
-            "value": 77.0
-          },
-          {
-            "unit": "tokens",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Tokens In",
-            "overfitting": "moderate",
-            "value": 216386.0
-          },
-          {
-            "overfitting": "moderate",
-            "value": 13.2,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 27938.0,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 15.0,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 27899.0,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 32.8,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Time",
-            "unit": "seconds"
-          },
-          {
-            "value": 73647.0,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Tokens In",
-            "unit": "tokens"
-          },
-          {
-            "value": 21.5,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Time",
-            "unit": "seconds"
-          },
-          {
-            "value": 46527.0,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Tokens In",
-            "unit": "tokens"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 52.2,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 54939.0,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 49.6,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 54711.0,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 21.9,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 40330.0,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 19.4,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 31988.0,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 44.8,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 115311.0,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 55.0,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 131219.0,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 41.8,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 57893.0,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 43.6,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Time",
-            "unit": "seconds",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 57789.0,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Tokens In",
-            "unit": "tokens",
-            "overfittingScore": 0.23
-          }
-        ],
-        "date": 1773973132714,
-        "commit": {
-          "id": "29a9dd1202349cc9e4b7f1afeb8fa4664f9970f3",
-          "author": {
-            "username": "JanKrivanek",
-            "name": "Jan Krivanek"
-          },
-          "message": "Add eval test authoring skill (#409)",
-          "timestamp": "2026-03-19T20:23:20+00:00",
-          "url": "https://github.com/dotnet/skills/commit/29a9dd1202349cc9e4b7f1afeb8fa4664f9970f3"
-        },
-        "model": "claude-opus-4.6",
-        "tool": "customSmallerIsBetter"
-      },
       {
         "commit": {
           "message": "Add eval test authoring skill (#409)",
@@ -7004,343 +6530,834 @@
           }
         ],
         "tool": "customSmallerIsBetter"
+      },
+      {
+        "model": "claude-opus-4.6",
+        "benches": [
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Skilled Time",
+            "unit": "seconds",
+            "value": 38.4
+          },
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29225.0
+          },
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Plugin Time",
+            "unit": "seconds",
+            "value": 56.1
+          },
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32863.0
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Skilled Time",
+            "unit": "seconds",
+            "value": 42.2
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29023.0
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Plugin Time",
+            "unit": "seconds",
+            "value": 70.9
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32828.0
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Skilled Time",
+            "unit": "seconds",
+            "value": 31.9
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29093.0
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Plugin Time",
+            "unit": "seconds",
+            "value": 59.8
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32728.0
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Skilled Time",
+            "unit": "seconds",
+            "value": 32.3
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28914.0
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Plugin Time",
+            "unit": "seconds",
+            "value": 54.6
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32663.0
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Skilled Time",
+            "unit": "seconds",
+            "value": 36.0
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 31082.0
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Plugin Time",
+            "unit": "seconds",
+            "value": 46.5
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31886.0
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Skilled Time",
+            "unit": "seconds",
+            "value": 22.4
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28101.0
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Plugin Time",
+            "unit": "seconds",
+            "value": 53.1
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31872.0
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Skilled Time",
+            "unit": "seconds",
+            "value": 27.9
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28312.0
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Plugin Time",
+            "unit": "seconds",
+            "value": 37.4
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31802.0
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Skilled Time",
+            "unit": "seconds",
+            "value": 23.6
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28281.0
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Plugin Time",
+            "unit": "seconds",
+            "value": 46.5
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31760.0
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Skilled Time",
+            "unit": "seconds",
+            "value": 28.3
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28077.0
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Plugin Time",
+            "unit": "seconds",
+            "value": 41.4
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31631.0
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Skilled Time",
+            "unit": "seconds",
+            "value": 22.4
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 27787.0
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Plugin Time",
+            "unit": "seconds",
+            "value": 33.4
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31494.0
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Skilled Time",
+            "unit": "seconds",
+            "value": 30.5
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 27894.0
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Plugin Time",
+            "unit": "seconds",
+            "value": 33.9
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31357.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Skilled Time",
+            "unit": "seconds",
+            "value": 34.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 27877.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Plugin Time",
+            "unit": "seconds",
+            "value": 26.2
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 31351.0
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 70.4,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 59994.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 115.7,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 40421.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 97.9,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 135925.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 97.2,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 96347.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Tokens In"
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Time",
+            "overfitting": "moderate",
+            "unit": "seconds",
+            "overfittingScore": 0.23,
+            "value": 36.1
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Tokens In",
+            "overfitting": "moderate",
+            "unit": "tokens",
+            "overfittingScore": 0.23,
+            "value": 28541.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Time",
+            "overfitting": "moderate",
+            "unit": "seconds",
+            "overfittingScore": 0.23,
+            "value": 36.7
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Tokens In",
+            "overfitting": "moderate",
+            "unit": "tokens",
+            "overfittingScore": 0.23,
+            "value": 31882.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 38.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 56586.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 62.6
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 61817.0
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 49.5,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 67396.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 107.9,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 56534.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Tokens In"
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Time",
+            "overfitting": "moderate",
+            "unit": "seconds",
+            "overfittingScore": 0.23,
+            "value": 28.9
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Tokens In",
+            "overfitting": "moderate",
+            "unit": "tokens",
+            "overfittingScore": 0.23,
+            "value": 28805.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Time",
+            "overfitting": "moderate",
+            "unit": "seconds",
+            "overfittingScore": 0.23,
+            "value": 32.6
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Tokens In",
+            "overfitting": "moderate",
+            "unit": "tokens",
+            "overfittingScore": 0.23,
+            "value": 32292.0
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 84.7,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 101579.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 50.3,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 61789.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 103.1,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 47246.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Tokens In"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 119.7,
+            "unit": "seconds",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Time"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 41871.0,
+            "unit": "tokens",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Tokens In"
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Skilled Time",
+            "unit": "seconds",
+            "value": 14.3
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29040.0
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Plugin Time",
+            "unit": "seconds",
+            "value": 30.9
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32760.0
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Skilled Time",
+            "unit": "seconds",
+            "value": 22.6
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29038.0
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Plugin Time",
+            "unit": "seconds",
+            "value": 33.5
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32640.0
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Skilled Time",
+            "unit": "seconds",
+            "value": 39.7
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29863.0
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Plugin Time",
+            "unit": "seconds",
+            "value": 64.7
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 33165.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Skilled Time",
+            "unit": "seconds",
+            "value": 23.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 31602.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Plugin Time",
+            "unit": "seconds",
+            "value": 33.9
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32759.0
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Skilled Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 31.4
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Skilled Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 29453.0
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Plugin Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 25.0
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Plugin Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 32872.0
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Skilled Time",
+            "unit": "seconds",
+            "value": 33.5
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29383.0
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Plugin Time",
+            "unit": "seconds",
+            "value": 30.1
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32760.0
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Skilled Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 32.0
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Skilled Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 29616.0
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Plugin Time",
+            "timedOut": true,
+            "unit": "seconds",
+            "value": 39.2
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Plugin Tokens In",
+            "timedOut": true,
+            "unit": "tokens",
+            "value": 33238.0
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Skilled Time",
+            "unit": "seconds",
+            "value": 30.9
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29520.0
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Plugin Time",
+            "unit": "seconds",
+            "value": 33.9
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 33034.0
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Skilled Time",
+            "unit": "seconds",
+            "value": 23.8
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28728.0
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Plugin Time",
+            "unit": "seconds",
+            "value": 50.4
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32379.0
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Skilled Time",
+            "unit": "seconds",
+            "value": 48.6
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29226.0
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Plugin Time",
+            "unit": "seconds",
+            "value": 55.1
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32674.0
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Skilled Time",
+            "unit": "seconds",
+            "value": 24.4
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28679.0
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Plugin Time",
+            "unit": "seconds",
+            "value": 40.3
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 36151.0
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Skilled Time",
+            "unit": "seconds",
+            "value": 23.8
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28476.0
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Plugin Time",
+            "unit": "seconds",
+            "value": 41.3
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32106.0
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Skilled Time",
+            "unit": "seconds",
+            "value": 43.9
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29567.0
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Plugin Time",
+            "unit": "seconds",
+            "value": 42.6
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 50352.0
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Skilled Time",
+            "unit": "seconds",
+            "value": 28.6
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29512.0
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Plugin Time",
+            "unit": "seconds",
+            "value": 59.4
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32956.0
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Skilled Time",
+            "unit": "seconds",
+            "value": 19.4
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29202.0
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Plugin Time",
+            "unit": "seconds",
+            "value": 47.8
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32670.0
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Skilled Time",
+            "unit": "seconds",
+            "value": 20.6
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 29269.0
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Plugin Time",
+            "unit": "seconds",
+            "value": 32.3
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 32850.0
+          }
+        ],
+        "commit": {
+          "message": "Add AGENTVIZ session replay integration (#494)",
+          "timestamp": "2026-04-02T15:39:59+00:00",
+          "author": {
+            "name": "Jan Krivanek",
+            "username": "JanKrivanek"
+          },
+          "url": "https://github.com/dotnet/skills/commit/d861bbf62e6f60499c36a9e3939998837b3cb098",
+          "id": "d861bbf62e6f60499c36a9e3939998837b3cb098"
+        },
+        "date": 1775187560829,
+        "tool": "customSmallerIsBetter"
       }
     ],
     "Quality": [
-      {
-        "benches": [
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Quality"
-          },
-          {
-            "value": 6.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Vanilla Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Quality"
-          },
-          {
-            "value": 6.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Vanilla Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 8.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 6.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Quality"
-          },
-          {
-            "value": 2.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Vanilla Quality"
-          },
-          {
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Quality"
-          },
-          {
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Quality"
-          },
-          {
-            "value": 2.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Vanilla Quality"
-          },
-          {
-            "unit": "Score (0-10)",
-            "value": 8.0,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Quality"
-          },
-          {
-            "unit": "Score (0-10)",
-            "value": 10.0,
-            "overfittingScore": 0.22,
-            "overfitting": "moderate",
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Quality"
-          },
-          {
-            "value": 4.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Vanilla Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Quality"
-          },
-          {
-            "value": 4.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Vanilla Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 10.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 8.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Quality"
-          },
-          {
-            "value": 6.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Vanilla Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 8.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Quality"
-          },
-          {
-            "overfitting": "moderate",
-            "overfittingScore": 0.22,
-            "value": 8.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Quality"
-          },
-          {
-            "value": 4.0,
-            "unit": "Score (0-10)",
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Vanilla Quality"
-          }
-        ],
-        "tool": "customBiggerIsBetter",
-        "model": "claude-opus-4.6",
-        "commit": {
-          "message": "Improve the build-perf-diag scenario test (#404)",
-          "id": "101a151e9815113841a97a52576b3cb3a8755616",
-          "author": {
-            "username": "JanKrivanek",
-            "name": "Jan Krivanek"
-          },
-          "timestamp": "2026-03-19T15:01:22+00:00",
-          "url": "https://github.com/dotnet/skills/commit/101a151e9815113841a97a52576b3cb3a8755616"
-        },
-        "date": 1773947321466
-      },
-      {
-        "benches": [
-          {
-            "overfitting": "moderate",
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 6.0,
-            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Quality",
-            "overfitting": "moderate",
-            "value": 10.0
-          },
-          {
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23,
-            "timedOut": true,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Quality",
-            "overfitting": "moderate",
-            "value": 8.399999618530273
-          },
-          {
-            "value": 6.0,
-            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 5.599999904632568,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 6.0,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 2.0,
-            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "value": 7.199999809265137,
-            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 9.600000381469727,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 7.199999809265137,
-            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 10.0,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 9.600000381469727,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 5.599999904632568,
-            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 9.199999809265137,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 8.800000190734863,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 4.800000190734863,
-            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Vanilla Quality",
-            "unit": "Score (0-10)"
-          },
-          {
-            "overfitting": "moderate",
-            "value": 8.0,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "overfitting": "moderate",
-            "value": 8.399999618530273,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Quality",
-            "unit": "Score (0-10)",
-            "overfittingScore": 0.23
-          },
-          {
-            "value": 4.0,
-            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Vanilla Quality",
-            "unit": "Score (0-10)"
-          }
-        ],
-        "date": 1773973132714,
-        "commit": {
-          "id": "29a9dd1202349cc9e4b7f1afeb8fa4664f9970f3",
-          "author": {
-            "username": "JanKrivanek",
-            "name": "Jan Krivanek"
-          },
-          "message": "Add eval test authoring skill (#409)",
-          "timestamp": "2026-03-19T20:23:20+00:00",
-          "url": "https://github.com/dotnet/skills/commit/29a9dd1202349cc9e4b7f1afeb8fa4664f9970f3"
-        },
-        "model": "claude-opus-4.6",
-        "tool": "customBiggerIsBetter"
-      },
       {
         "commit": {
           "message": "Add eval test authoring skill (#409)",
@@ -12058,6 +12075,607 @@
             "value": 4.0
           }
         ],
+        "tool": "customBiggerIsBetter"
+      },
+      {
+        "model": "claude-opus-4.6",
+        "benches": [
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Set up Shell navigation with tabs and flyout - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 7.599999904632568
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Navigate with parameters using GoToAsync - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Handle back navigation and unsaved changes guard - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.0
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-shell-navigation/Diagnose common Shell navigation mistakes - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.399999618530273
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 9.600000381469727
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 9.600000381469727
+          },
+          {
+            "name": "maui-dependency-injection/Register services with correct lifetimes in MauiProgram.cs - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Shell navigation auto-resolves DI-registered pages - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-dependency-injection/Platform-specific service registration with fallback - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.800000190734863
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 9.600000381469727
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 9.199999809265137
+          },
+          {
+            "name": "maui-dependency-injection/Avoid AddScoped pitfall in MAUI - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 9.199999809265137
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Save and restore state on background - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.0
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Window lifecycle event subscription - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-app-lifecycle/Platform-specific lifecycle mapping - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-app-lifecycle/Avoid legacy Xamarin.Forms lifecycle methods - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.399999618530273
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 9.199999809265137,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Skilled Quality"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 8.399999618530273,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Plugin Quality"
+          },
+          {
+            "name": "dotnet-maui-doctor/Plan macOS MAUI setup with Xcode - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 5.599999904632568
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 5.199999809265137,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Skilled Quality"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 6.400000095367432,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Plugin Quality"
+          },
+          {
+            "name": "dotnet-maui-doctor/Plan Linux MAUI environment for Android - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 5.599999904632568
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Skilled Quality",
+            "overfitting": "moderate",
+            "unit": "Score (0-10)",
+            "overfittingScore": 0.23,
+            "value": 6.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Plugin Quality",
+            "overfitting": "moderate",
+            "unit": "Score (0-10)",
+            "overfittingScore": 0.23,
+            "value": 7.199999809265137
+          },
+          {
+            "name": "dotnet-maui-doctor/Guardrail against workload update and repair - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 2.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Skilled Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Plugin Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Diagnose non-Microsoft JDK causing build failure - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.0
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 9.199999809265137,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Skilled Quality"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 8.0,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Plugin Quality"
+          },
+          {
+            "name": "dotnet-maui-doctor/Plan complete MAUI setup on Windows - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Skilled Quality",
+            "overfitting": "moderate",
+            "unit": "Score (0-10)",
+            "overfittingScore": 0.23,
+            "value": 10.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Plugin Quality",
+            "overfitting": "moderate",
+            "unit": "Score (0-10)",
+            "overfittingScore": 0.23,
+            "value": 10.0
+          },
+          {
+            "name": "dotnet-maui-doctor/Prevent incorrect JAVA_HOME configuration - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 5.199999809265137
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 6.800000190734863,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Skilled Quality"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 9.600000381469727,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Plugin Quality"
+          },
+          {
+            "name": "dotnet-maui-doctor/Determine required Android SDK packages for specific .NET version - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 6.0
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 6.0,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Skilled Quality"
+          },
+          {
+            "overfittingScore": 0.23,
+            "value": 5.599999904632568,
+            "unit": "Score (0-10)",
+            "timedOut": true,
+            "overfitting": "moderate",
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Plugin Quality"
+          },
+          {
+            "name": "dotnet-maui-doctor/Fix stale MAUI workloads after SDK update - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.0
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Basic CollectionView with data binding and DataTemplate - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.800000190734863
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Grid layout with CollectionView - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Selection and pull-to-refresh with CollectionView - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-collectionview/Avoid ListView and ViewCell mistakes - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Skilled Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Plugin Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 9.199999809265137
+          },
+          {
+            "name": "maui-safe-area/Handle notch and status bar safe areas on iOS - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 4.0
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Edge-to-edge layout with SafeAreaEdges - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 2.4000000953674316
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Skilled Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Plugin Quality",
+            "timedOut": true,
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Keyboard avoidance with safe area for chat UI - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 2.0
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-safe-area/Avoid deprecated UseSafeArea in new .NET 10 project - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 2.0
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Add light/dark mode support using AppThemeBinding - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 9.199999809265137
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Create custom themes with ResourceDictionary switching - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 7.599999904632568
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Detect and respond to system theme changes - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-theming/Avoid common theming mistakes - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 7.599999904632568
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-data-binding/Set up compiled bindings with x:DataType on a page - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 5.199999809265137
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Implement MVVM ViewModel with ObservableObject - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Create and use an IValueConverter - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 8.399999618530273
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 8.0
+          },
+          {
+            "name": "maui-data-binding/Diagnose missing BindingContext and non-compiled bindings - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 6.0
+          }
+        ],
+        "commit": {
+          "message": "Add AGENTVIZ session replay integration (#494)",
+          "timestamp": "2026-04-02T15:39:59+00:00",
+          "author": {
+            "name": "Jan Krivanek",
+            "username": "JanKrivanek"
+          },
+          "url": "https://github.com/dotnet/skills/commit/d861bbf62e6f60499c36a9e3939998837b3cb098",
+          "id": "d861bbf62e6f60499c36a9e3939998837b3cb098"
+        },
+        "date": 1775187560829,
         "tool": "customBiggerIsBetter"
       }
     ]

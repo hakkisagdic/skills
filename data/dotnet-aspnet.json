@@ -125,6 +125,68 @@
           }
         ],
         "tool": "customBiggerIsBetter"
+      },
+      {
+        "model": "claude-opus-4.6",
+        "benches": [
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 6.0
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 6.0
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Skilled Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Plugin Quality",
+            "unit": "Score (0-10)",
+            "value": 10.0
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Vanilla Quality",
+            "unit": "Score (0-10)",
+            "value": 9.600000381469727
+          }
+        ],
+        "commit": {
+          "message": "Add AGENTVIZ session replay integration (#494)",
+          "timestamp": "2026-04-02T15:39:59+00:00",
+          "author": {
+            "name": "Jan Krivanek",
+            "username": "JanKrivanek"
+          },
+          "url": "https://github.com/dotnet/skills/commit/d861bbf62e6f60499c36a9e3939998837b3cb098",
+          "id": "d861bbf62e6f60499c36a9e3939998837b3cb098"
+        },
+        "date": 1775187556338,
+        "tool": "customBiggerIsBetter"
       }
     ],
     "Efficiency": [
@@ -281,8 +343,85 @@
           }
         ],
         "tool": "customSmallerIsBetter"
+      },
+      {
+        "model": "claude-opus-4.6",
+        "benches": [
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Skilled Time",
+            "unit": "seconds",
+            "value": 46.2
+          },
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28525.0
+          },
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Plugin Time",
+            "unit": "seconds",
+            "value": 42.2
+          },
+          {
+            "name": "minimal-api-file-upload/Implement secure file upload in ASP.NET Core 8 minimal API - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 28461.0
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Skilled Time",
+            "unit": "seconds",
+            "value": 24.9
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28424.0
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Plugin Time",
+            "unit": "seconds",
+            "value": 26.8
+          },
+          {
+            "name": "minimal-api-file-upload/Upload multiple files with metadata in minimal API - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 28391.0
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Skilled Time",
+            "unit": "seconds",
+            "value": 30.8
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Skilled Tokens In",
+            "unit": "tokens",
+            "value": 28236.0
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Plugin Time",
+            "unit": "seconds",
+            "value": 34.4
+          },
+          {
+            "name": "minimal-api-file-upload/Stream very large file uploads without buffering - Plugin Tokens In",
+            "unit": "tokens",
+            "value": 28312.0
+          }
+        ],
+        "commit": {
+          "message": "Add AGENTVIZ session replay integration (#494)",
+          "timestamp": "2026-04-02T15:39:59+00:00",
+          "author": {
+            "name": "Jan Krivanek",
+            "username": "JanKrivanek"
+          },
+          "url": "https://github.com/dotnet/skills/commit/d861bbf62e6f60499c36a9e3939998837b3cb098",
+          "id": "d861bbf62e6f60499c36a9e3939998837b3cb098"
+        },
+        "date": 1775187556338,
+        "tool": "customSmallerIsBetter"
       }
     ]
   },
-  "lastUpdate": 1775101027427
+  "lastUpdate": 1775187556338
 }
