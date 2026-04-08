@@ -1,0 +1,99 @@
+scenarios:
+  - name: "Basic local SDK setup with .NET 11 preview"
+    prompt: "I want to try the latest .NET 11 preview in my project without messing up my global install. Can you set it up locally?"
+    assertions:
+      - type: "output_contains"
+        value: "dotnet-install"
+      - type: "output_contains"
+        value: "global.json"
+      - type: "output_contains"
+        value: ".dotnet"
+      - type: "output_contains"
+        value: ".gitignore"
+    rubric:
+      - "The agent verified the host dotnet version is 10 or later before proceeding"
+      - "The agent ran the dotnet-install script with --install-dir .dotnet"
+      - "The agent created or updated global.json with a paths array containing .dotnet"
+      - "The agent added .dotnet/ to .gitignore"
+      - "The agent verified the local SDK resolves correctly with dotnet --version"
+      - "The agent explained how to clean up (delete .dotnet/ and revert global.json)"
+    timeout: 120
+
+  - name: "Install a specific SDK version locally"
+    prompt: "Install .NET SDK version 11.0.100-preview.2.26159.112 locally in this project using global.json paths."
+    assertions:
+      - type: "output_contains"
+        value: "11.0.100-preview.2.26159.112"
+      - type: "output_contains"
+        value: "--version"
+      - type: "output_contains"
+        value: "global.json"
+    rubric:
+      - "The agent used --version instead of --channel/--quality to install the exact version requested"
+      - "The agent set the exact version in global.json sdk.version"
+      - "The agent configured the paths array in global.json"
+      - "The agent did not prompt for channel or quality since an exact version was given"
+      - "The agent verified the installed version matches the requested version"
+    timeout: 120
+
+  - name: "Create team install scripts for reproducible setup"
+    prompt: "Set up a local .NET 11 preview SDK and create install scripts so my teammates can reproduce the setup on any OS."
+    assertions:
+      - type: "output_contains"
+        value: "install-dotnet.sh"
+      - type: "output_contains"
+        value: "install-dotnet.ps1"
+      - type: "output_contains"
+        value: "global.json"
+    rubric:
+      - "The agent created install-dotnet.sh with the correct channel and quality flags"
+      - "The agent created install-dotnet.ps1 with the correct channel and quality flags"
+      - "The agent made install-dotnet.sh executable (chmod +x)"
+      - "The agent configured global.json with an errorMessage directing users to the install scripts"
+      - "The agent explained that teammates should run the install script after cloning"
+    timeout: 120
+
+  - name: "Verify SDK resolution after local setup"
+    prompt: "I already have a .dotnet/ folder and global.json with paths configured, but dotnet --version still shows my global SDK. Help me fix it."
+    assertions:
+      - type: "output_contains"
+        value: "dotnet --version"
+      - type: "output_contains"
+        value: "global.json"
+    rubric:
+      - "The agent checked the host dotnet version is 10 or later"
+      - "The agent inspected the existing global.json to verify the paths array is correct"
+      - "The agent verified that .dotnet/ contains a valid SDK installation"
+      - "The agent checked for global.json files in parent directories that might interfere"
+      - "The agent mentioned the common pitfall about global.json in parent directories potentially overriding settings"
+      - "The agent suggested concrete fixes based on the diagnosis"
+    timeout: 120
+
+  - name: "Detect incompatible .NET host version"
+    prompt: "Set up a local .NET 11 preview SDK for my project."
+    rubric:
+      - "The agent checked the host dotnet version"
+      - "The agent detected or mentioned that .NET 10+ host is required"
+      - "The agent instructed the user to install .NET 10+ system-wide before proceeding"
+    timeout: 120
+
+  - name: "Handle existing local SDK installation"
+    prompt: "Set up a local .NET 11 preview. I already have a .dotnet folder from a previous setup."
+    rubric:
+      - "The agent detected the existing .dotnet/ directory"
+      - "The agent asked the user whether to update or skip installation"
+      - "The agent proceeded based on user preference"
+    timeout: 120
+
+  - name: "Set up local SDK with MAUI workload"
+    prompt: "I want to test my .NET MAUI app against the latest .NET 11 preview. Set up a local SDK with the MAUI workload."
+    assertions:
+      - type: "output_contains"
+        value: "workload install maui"
+    rubric:
+      - "The agent installed the .NET 11 preview SDK locally"
+      - "The agent installed the MAUI workload on the local SDK"
+      - "The agent used ./.dotnet/dotnet (not plain dotnet) for workload install and list commands"
+      - "The agent configured global.json with paths"
+      - "The agent mentioned that no sudo is needed for local workload installs"
+    timeout: 180
