@@ -25,7 +25,8 @@ The result is a fully isolated SDK that:
 
 - Does **not** modify the system-wide .NET installation.
 - Is picked up automatically by `dotnet` commands run from the project root.
-- Can be deleted with a single `rm -rf .dotnet/` to revert.
+- Can be deleted with `rm -rf .dotnet/` (macOS/Linux) or
+  `Remove-Item -Recurse -Force .\.dotnet` (Windows) to revert.
 
 ### Target personas
 
@@ -99,8 +100,6 @@ Parse the major version. If < 10, stop and tell the user:
 > The global.json `paths` feature requires .NET 10 or later as the host SDK.
 > Your current version is {version}. Please install .NET 10+ system-wide first.
 
-**Checkpoint:** Major version ≥ 10 confirmed.
-
 ### Step 3 — Detect operating system
 
 Check the OS by running `uname -s 2>/dev/null`. If the command succeeds, use
@@ -121,8 +120,6 @@ $IsWindows  # $true
 
 Determine which script to use: macOS/Linux → `dotnet-install.sh`, Windows → `dotnet-install.ps1`.
 
-**Checkpoint:** OS detected; correct script variant selected.
-
 ### Step 4 — Check for existing local SDK
 
 Before installing, check whether a `.dotnet/` directory already exists:
@@ -139,8 +136,6 @@ If `.dotnet/` already exists, ask the user:
 
 - If the user wants to **update**, proceed to Step 5.
 - If the user wants to **skip**, jump to Step 6 (identify the installed version).
-
-**Checkpoint:** Decision made — update or skip installation.
 
 ### Step 5 — Download and run the install script
 
@@ -167,8 +162,9 @@ Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile "$env:TE
   -InstallDir .dotnet
 ```
 
-If the user provided an exact `--version`, replace `--channel`/`--quality` with
-`--version <VERSION>`.
+If the user provided an exact version, replace `--channel`/`--quality` with
+`--version <VERSION>` on macOS/Linux, or replace `-Channel`/`-Quality` with
+`-Version <VERSION>` on Windows PowerShell.
 
 > **Safety note:** This downloads the SDK into `.dotnet/` inside the project.
 > Nothing outside this folder is modified. Delete it at any time to revert.
@@ -237,15 +233,17 @@ Verify the workload was installed:
 .\.dotnet\dotnet.exe workload list
 ```
 
-> **Always use `./.dotnet/dotnet` for workload commands.** Workload metadata is
+> **Always use the local dotnet binary for workload commands** (`./.dotnet/dotnet`
+> on macOS/Linux or `.\.dotnet\dotnet.exe` on Windows). Workload metadata is
 > stored relative to the dotnet root of the host process. Running `dotnet workload
 > install` or `dotnet workload list` through the system host puts metadata in the
 > wrong location — the system host's dotnet root, not `.dotnet/`. The `paths`
 > feature routes SDK resolution but does **not** redirect workload storage.
 > (See [dotnet/sdk#49825](https://github.com/dotnet/sdk/issues/49825).)
 
-**Checkpoint:** Requested workloads appear in `./.dotnet/dotnet workload list`
-output.
+**Checkpoint:** Requested workloads appear in the local workload list output
+(`./.dotnet/dotnet workload list` on macOS/Linux or
+`.\.dotnet\dotnet.exe workload list` on Windows).
 
 ### Step 8 — Create or update global.json
 
@@ -467,8 +465,9 @@ Tell the user what was done:
 >   for your team.}
 >
 > **To clean up later:**
-> 1. Delete the `.dotnet/` directory: `rm -rf .dotnet/`
->    (This also removes any installed workloads automatically.)
+> 1. Delete the `.dotnet/` directory: `rm -rf .dotnet/` (macOS/Linux) or
+>    `Remove-Item -Recurse -Force .\.dotnet` (Windows).
+>    This also removes any installed workloads automatically.
 > 2. Remove the `paths` and `errorMessage` keys from `global.json`.
 > 3. (Optional) Delete `install-dotnet.sh` / `install-dotnet.ps1`.
 > 4. Run `dotnet build` to confirm your project works with the system-wide SDK
@@ -495,6 +494,6 @@ After completing the workflow, verify:
 | `dotnet app.dll` uses wrong runtime | `paths` applies to SDK resolution only, not apphost or `dotnet exec` | Use `dotnet run` instead, or set `DOTNET_ROOT` |
 | `.dotnet/` is huge | SDKs include targeting packs, templates, etc. | Expected; always gitignore |
 | Install script fails on proxy/firewall | Corporate network blocks `dot.net` | Download the script and SDK manually; use `--install-dir` |
-| Teammates get "SDK not found" | `.dotnet/` is gitignored and they haven't run the install script | Ensure `errorMessage` in `global.json` directs them to the script |
-| CI build fails | CI image doesn't have .NET 10+ host | Add a step to install .NET 10+ globally first, then run the local install script |
-| MAUI templates not available | Forgot to install workloads on the local SDK | Run `./.dotnet/dotnet workload install maui` using the local binary |
+| Teammates get "SDK not found" | `.dotnet/` is gitignored, they haven't run install script | Ensure `errorMessage` in `global.json` directs them to the script |
+| CI build fails | CI image lacks .NET 10+ host | Install .NET 10+ globally first, then run local install script |
+| MAUI templates not available | Workloads not on local SDK | Run `./.dotnet/dotnet workload install maui` (local binary) |

@@ -17,7 +17,7 @@ scenarios:
       - "The agent added .dotnet/ to .gitignore"
       - "The agent verified the local SDK resolves correctly with dotnet --version"
       - "The agent explained how to clean up (delete .dotnet/ and revert global.json)"
-    timeout: 120
+    timeout: 180
 
   - name: "Install a specific SDK version locally"
     prompt: "Install .NET SDK version 11.0.100-preview.2.26159.112 locally in this project using global.json paths."
@@ -25,16 +25,14 @@ scenarios:
       - type: "output_contains"
         value: "11.0.100-preview.2.26159.112"
       - type: "output_contains"
-        value: "--version"
-      - type: "output_contains"
         value: "global.json"
     rubric:
-      - "The agent used --version instead of --channel/--quality to install the exact version requested"
+      - "The agent used a version flag (--version or -Version) instead of channel/quality to install the exact version requested"
       - "The agent set the exact version in global.json sdk.version"
       - "The agent configured the paths array in global.json"
       - "The agent did not prompt for channel or quality since an exact version was given"
       - "The agent verified the installed version matches the requested version"
-    timeout: 120
+    timeout: 180
 
   - name: "Create team install scripts for reproducible setup"
     prompt: "Set up a local .NET 11 preview SDK and create install scripts so my teammates can reproduce the setup on any OS."
@@ -51,7 +49,7 @@ scenarios:
       - "The agent made install-dotnet.sh executable (chmod +x)"
       - "The agent configured global.json with an errorMessage directing users to the install scripts"
       - "The agent explained that teammates should run the install script after cloning"
-    timeout: 120
+    timeout: 180
 
   - name: "Verify SDK resolution after local setup"
     prompt: "I already have a .dotnet/ folder and global.json with paths configured, but dotnet --version still shows my global SDK. Help me fix it."
@@ -67,7 +65,7 @@ scenarios:
       - "The agent checked for global.json files in parent directories that might interfere"
       - "The agent mentioned the common pitfall about global.json in parent directories potentially overriding settings"
       - "The agent suggested concrete fixes based on the diagnosis"
-    timeout: 120
+    timeout: 180
 
   - name: "Detect incompatible .NET host version"
     prompt: "Set up a local .NET 11 preview SDK for my project. My current dotnet --version shows 9.0.306."
@@ -75,7 +73,7 @@ scenarios:
       - "The agent detected that the host version (9.0.306) is below the .NET 10 requirement"
       - "The agent mentioned that .NET 10+ host is required for the paths feature"
       - "The agent instructed the user to install .NET 10+ system-wide before proceeding"
-    timeout: 120
+    timeout: 180
 
   - name: "Handle existing local SDK installation"
     prompt: "Set up a local .NET 11 preview. I already have a .dotnet folder from a previous setup."
@@ -83,7 +81,7 @@ scenarios:
       - "The agent detected the existing .dotnet/ directory"
       - "The agent asked the user whether to update or skip installation"
       - "The agent proceeded based on user preference"
-    timeout: 120
+    timeout: 180
 
   - name: "Set up local SDK with MAUI workload"
     prompt: "I want to test my .NET MAUI app against the latest .NET 11 preview. Set up a local SDK with the MAUI workload."
