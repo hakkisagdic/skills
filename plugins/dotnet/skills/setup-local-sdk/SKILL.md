@@ -107,24 +107,19 @@ Check the OS by running `uname -s 2>/dev/null`. If the command succeeds, use
 the bash script path. If it fails (Windows), use PowerShell commands.
 
 ```bash
-# macOS / Linux — uname succeeds and returns "Darwin" or "Linux"
 uname -s 2>/dev/null
 ```
 
 > **Git Bash / Cygwin edge case:** If `uname -s` returns a value starting with
-> `MINGW` or `CYGWIN`, the agent is running in Git Bash or Cygwin on Windows.
-> Use the PowerShell install path instead.
+> `MINGW` or `CYGWIN`, use the PowerShell install path instead.
 
 If `uname` fails or is unavailable, assume Windows and use PowerShell:
 
 ```powershell
-# Windows (PowerShell)
 $IsWindows  # $true
 ```
 
-Determine which install script variant to use:
-- macOS/Linux (uname succeeds) → `dotnet-install.sh`
-- Windows (uname fails) → `dotnet-install.ps1`
+Determine which script to use: macOS/Linux → `dotnet-install.sh`, Windows → `dotnet-install.ps1`.
 
 **Checkpoint:** OS detected; correct script variant selected.
 
@@ -149,18 +144,13 @@ If `.dotnet/` already exists, ask the user:
 
 ### Step 5 — Download and run the install script
 
-> **Security note:** The install script is downloaded from Microsoft's official
-> URL. Inform the user: "The install script is sourced from
-> https://dot.net/v1/dotnet-install.sh (Microsoft official). You can inspect
-> the script before running it if you'd like."
+> **Security note:** The install script is from Microsoft's official URL
+> (https://dot.net/v1/dotnet-install.sh). The user can inspect it before running.
 
 **macOS / Linux:**
 
 ```bash
-# Step 1: Download the script
 curl -sSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
-
-# Step 2: Execute the script
 bash /tmp/dotnet-install.sh \
   --channel <CHANNEL> \
   --quality <QUALITY> \
@@ -170,10 +160,7 @@ bash /tmp/dotnet-install.sh \
 **Windows (PowerShell):**
 
 ```powershell
-# Step 1: Download the script
 Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile "$env:TEMP\dotnet-install.ps1"
-
-# Step 2: Execute the script
 & "$env:TEMP\dotnet-install.ps1" `
   -Channel <CHANNEL> `
   -Quality <QUALITY> `
@@ -183,9 +170,8 @@ Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile "$env:TE
 If the user provided an exact `--version`, replace `--channel`/`--quality` with
 `--version <VERSION>`.
 
-> **Safety note to communicate:** This downloads the SDK into a `.dotnet/`
-> folder inside your project. Nothing outside this folder is modified. You can
-> delete it at any time to revert.
+> **Safety note:** This downloads the SDK into `.dotnet/` inside the project.
+> Nothing outside this folder is modified. Delete it at any time to revert.
 
 **Checkpoint:** Install script exits with code 0; `.dotnet/` directory exists
 and contains a `dotnet` binary.
