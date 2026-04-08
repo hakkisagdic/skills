@@ -76,7 +76,7 @@ If `.dotnet/` exists, ask: update with the new version, or skip and keep it?
 **macOS / Linux:**
 
 ```bash
-curl -sSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
+curl -fsSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
 bash /tmp/dotnet-install.sh --channel <CHANNEL> --quality <QUALITY> --install-dir .dotnet
 ```
 
@@ -135,8 +135,10 @@ Verify: `./.dotnet/dotnet workload list` (or `.\.dotnet\dotnet.exe workload list
 - `allowPrerelease`: set to `true` only when installing a prerelease SDK. Omit for stable versions.
 - `errorMessage`: include only when team install scripts are created (Step 10). Otherwise omit.
 
-If `global.json` already exists, preserve existing properties (`msbuild-sdks`,
-`tools`, etc.) and only add/update the `sdk` section. Warn about overwrites.
+If `global.json` already exists, **merge** carefully: preserve existing properties (`msbuild-sdks`,
+`tools`, etc.) and only add/update the `sdk` section. Read the existing file first, update/add
+the `sdk` object, then write it back. This ensures cross-project config (e.g., MSBuild settings)
+isn't lost. Always back up the original file (e.g., `global.json.bak`) before modifying.
 
 **Minimal config** (when version pinning isn't needed):
 `{"sdk":{"paths":[".dotnet","$host$"]}}`
@@ -170,7 +172,7 @@ INSTALL_DIR=".dotnet"
 CHANNEL="11.0"
 QUALITY="preview"
 WORKLOADS=("${@}")
-curl -sSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
+curl -fsSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
 bash /tmp/dotnet-install.sh --channel "$CHANNEL" --quality "$QUALITY" --install-dir "$INSTALL_DIR"
 SDK_VERSION=$("$INSTALL_DIR/dotnet" --version)
 [ -f global.json ] && cp global.json global.json.bak

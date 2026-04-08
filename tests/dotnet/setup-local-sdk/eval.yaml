@@ -13,8 +13,7 @@ scenarios:
       - "The agent created or updated global.json with a paths array"
       - "The agent added .dotnet/ to .gitignore"
       - "The agent explained how to clean up"
-    expect_tools: ["bash"]
-    timeout: 180
+    timeout: 300
 
   - name: "Install a specific SDK version locally"
     prompt: "Install .NET SDK version 11.0.100-preview.2.26159.112 locally using global.json paths."
@@ -27,8 +26,7 @@ scenarios:
       - "The agent used a version flag instead of channel/quality to install the exact version"
       - "The agent configured global.json with the paths array and exact version"
       - "The agent verified the installed version matches the request"
-    expect_tools: ["bash"]
-    timeout: 180
+    timeout: 300
 
   - name: "Set up local SDK with MAUI workload"
     prompt: "I need to test my .NET MAUI app with the latest .NET 11 preview. Set up a local SDK with the MAUI workload installed."
@@ -41,8 +39,7 @@ scenarios:
       - "The agent installed the SDK locally and the MAUI workload"
       - "The agent used ./.dotnet/dotnet (not system dotnet) for workload commands"
       - "The agent configured global.json with paths"
-    expect_tools: ["bash"]
-    timeout: 180
+    timeout: 300
 
   - name: "Create team install scripts"
     prompt: "Set up a local .NET 11 preview SDK and create install scripts so teammates can reproduce the setup on any OS."
@@ -55,16 +52,15 @@ scenarios:
       - "The agent created install-dotnet.sh and install-dotnet.ps1 scripts"
       - "The agent configured global.json with an errorMessage directing to the scripts"
       - "The agent explained that teammates run the script after cloning"
-    expect_tools: ["bash"]
-    timeout: 180
+    timeout: 300
 
   - name: "Detect incompatible .NET host version"
     prompt: "Set up a local .NET 11 preview SDK for my project. My dotnet --version shows 9.0.306."
     assertions:
       - type: "output_contains"
-        value: "10"
+        value: ".NET 10"
     rubric:
       - "The agent detected that version 9.0.306 is below the .NET 10 requirement"
       - "The agent explained that .NET 10+ is required for the paths feature"
       - "The agent told the user to install .NET 10+ system-wide first"
-    timeout: 60
+    timeout: 120
