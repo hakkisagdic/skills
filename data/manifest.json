@@ -1,5 +1,4 @@
 {
-  "generated": "2026-04-09T18:23:09.6730000+00:00",
   "sessions": [
     {
       "mtime": 1775758988300,
@@ -47698,5 +47697,6 @@
       "id": "scheduled/2026-04-08/dotnet/test-a-c--language-feature-with-a-script--plugin--run4",
       "url": "sessions/scheduled/2026-04-08/dotnet/test-a-c--language-feature-with-a-script--plugin--run4.jsonl"
     }
-  ]
+  ],
+  "generated": "2026-04-09T18:23:09.6730000+00:00"
 }
