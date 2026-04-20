@@ -5,6 +5,7 @@ description: >-
   tests, improve test coverage, or add tests.
 name: code-testing-generator
 tools: ['read', 'search', 'edit', 'task', 'skill', 'terminal']
+agents: ['code-testing-researcher', 'code-testing-planner', 'code-testing-implementer', 'code-testing-builder', 'code-testing-tester', 'code-testing-fixer', 'code-testing-linter']
 ---
 
 # Test Generator Agent

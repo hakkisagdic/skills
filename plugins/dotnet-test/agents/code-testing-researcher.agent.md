@@ -4,6 +4,8 @@ description: >-
   and testability. Identifies source files, existing tests, build commands, and
   testing framework. Works with any language.
 name: code-testing-researcher
+tools: ['read', 'search', 'edit', 'task']
+user-invocable: false
 user-invocable: false
 ---
 

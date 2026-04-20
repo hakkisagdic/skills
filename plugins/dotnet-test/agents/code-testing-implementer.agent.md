@@ -4,6 +4,8 @@ description: >-
   files and verifies they compile and pass. Calls builder, tester, and fixer agents as
   needed.
 name: code-testing-implementer
+tools: ['read', 'search', 'edit', 'task']
+agents: ['code-testing-builder', 'code-testing-tester', 'code-testing-fixer', 'code-testing-linter']
 user-invocable: false
 ---
 

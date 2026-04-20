@@ -7,7 +7,7 @@ description: >-
   MSTest, migrate to xUnit v3, switch to Microsoft.Testing.Platform, modernize
   test infrastructure, or when the user says "migrate my tests".
 tools: ['read', 'search', 'edit', 'terminal', 'skill']
-user-invokable: true
+user-invocable: true
 disable-model-invocation: false
 ---
 

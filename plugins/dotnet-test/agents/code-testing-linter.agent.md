@@ -3,6 +3,7 @@ description: >-
   Runs code formatting/linting for any language. Discovers lint
   command from project files if not specified.
 name: code-testing-linter
+tools: ['read', 'search', 'terminal']
 user-invocable: false
 ---
 

@@ -3,6 +3,7 @@ description: >-
   Runs test commands for any language and reports results.
   Discovers test command from project files if not specified.
 name: code-testing-tester
+tools: ['read', 'search', 'terminal']
 user-invocable: false
 ---
 

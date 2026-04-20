@@ -4,6 +4,7 @@ description: >-
   findings. Organizes tests into phases by priority and complexity. Works with any
   language.
 name: code-testing-planner
+tools: ['read', 'search', 'edit']
 user-invocable: false
 ---
 

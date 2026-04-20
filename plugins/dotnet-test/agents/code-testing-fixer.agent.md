@@ -3,6 +3,7 @@ description: >-
   Fixes compilation errors in source or test files. Analyzes
   error messages and applies corrections.
 name: code-testing-fixer
+tools: ['read', 'search', 'edit']
 user-invocable: false
 ---
 

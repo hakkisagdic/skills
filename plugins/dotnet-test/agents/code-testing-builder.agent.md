@@ -3,6 +3,7 @@ description: >-
   Runs build/compile commands for any language and reports
   results. Discovers build command from project files if not specified.
 name: code-testing-builder
+tools: ['read', 'search', 'terminal']
 user-invocable: false
 ---
 
