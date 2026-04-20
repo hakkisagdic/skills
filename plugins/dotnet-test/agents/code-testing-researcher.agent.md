@@ -6,7 +6,6 @@ description: >-
 name: code-testing-researcher
 tools: ['read', 'search', 'edit', 'task']
 user-invocable: false
-user-invocable: false
 ---
 
 # Test Researcher
