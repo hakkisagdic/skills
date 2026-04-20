@@ -1,6 +1,6 @@
 ---
 name: writing-mstest-tests
-description: "Best practices for writing new MSTest 3.x/4.x unit tests. Use when the user needs to write, create, or implement new MSTest tests, or fix specific broken test code like swapped Assert.AreEqual arguments, incorrect assertion usage, or modernizing legacy test code. Covers modern assertions, data-driven tests, test lifecycle, MSTest.Sdk, sealed classes, Assert.Throws, DynamicData with ValueTuples, TestContext, and conditional execution. Do NOT use for reviewing or auditing existing test quality or finding anti-patterns — use test-anti-patterns instead."
+description: "Best practices for writing new MSTest 3.x/4.x unit tests and implementing concrete fixes in existing MSTest code. Use when the user asks to write, create, implement, repair, or modernize tests (including review-and-fix prompts such as 'something seems off, fix issues'). Primary fit for direct code changes like correcting swapped Assert.AreEqual argument order, replacing outdated assertion patterns, and converting DynamicData from IEnumerable<object[]> to ValueTuple-based data sets. Covers modern assertions, data-driven tests, test lifecycle, MSTest.Sdk, sealed classes, Assert.Throws, DynamicData with ValueTuples, TestContext, and conditional execution. Do NOT use for broad test quality audits, flaky-test investigations, or anti-pattern detection reports — use test-anti-patterns instead."
 ---
 
 # Writing MSTest Tests
@@ -13,6 +13,8 @@ Help users write effective, modern unit tests with MSTest 3.x/4.x using current 
 - User wants to improve or modernize existing MSTest tests by implementing concrete fixes
 - User asks about MSTest assertion APIs, data-driven patterns, or test lifecycle
 - User needs help fixing a specific MSTest test bug or failing assertion
+- User asks to fix swapped `Assert.AreEqual` argument order (expected first, actual second)
+- User asks to convert `DynamicData` from `IEnumerable<object[]>` to ValueTuple-based data
 
 ## When Not to Use
 
