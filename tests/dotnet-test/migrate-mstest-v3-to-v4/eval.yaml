@@ -127,7 +127,7 @@ scenarios:
                 <TargetFramework>net8.0</TargetFramework>
               </PropertyGroup>
               <ItemGroup>
-                <PackageReference Include="MSTest" Version="3.8.0" />
+                <PackageReference Include="MSTest" Version="4.1.0" />
               </ItemGroup>
             </Project>
         - path: "CustomAttributes.cs"
@@ -445,8 +445,9 @@ scenarios:
   - name: "Fix sealed custom TestMethodAttribute with Timeout changes"
     prompt: |
       After upgrading to MSTest 4.1.0, my test project fails to compile. I have a sealed
-      custom TestMethodAttribute subclass that overrides Execute, and several tests use
-      [Timeout(TestTimeout.Infinite)]. How do I fix these errors?
+      custom TestMethodAttribute subclass that overrides Execute, its constructor now has
+      errors because the base TestMethodAttribute constructor uses CallerInfo parameters,
+      and several tests use [Timeout(TestTimeout.Infinite)]. How do I fix these errors?
     setup:
       files:
         - path: "TestProject.csproj"
