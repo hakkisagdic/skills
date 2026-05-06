@@ -14,7 +14,7 @@ license: MIT
 
 # .NET P/Invoke
 
-Calling native code from .NET is powerful but unforgiving. Incorrect signatures, garbled strings, and leaked or freed memory are the most common sources of bugs — all can manifest as intermittent crashes, silent data corruption, or access violations far from the actual defect.
+Calling native code from .NET is really powerful but unforgiving. Incorrect signatures, garbled strings, and leaked or freed memory are the most common sources of bugs — all can manifest as intermittent crashes, silent data corruption, or access violations far from the actual defect.
 
 This skill covers both `DllImport` (available since .NET Framework 1.0) and `LibraryImport` (source-generated, .NET 7+). When targeting .NET Framework, always use `DllImport`. When targeting .NET 7+, prefer `LibraryImport` for new code. When native AOT is a requirement, `LibraryImport` is the only option.
 

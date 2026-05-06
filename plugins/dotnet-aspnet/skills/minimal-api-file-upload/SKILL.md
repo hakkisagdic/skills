@@ -9,7 +9,7 @@ license: MIT
 ## When to Use
 - File upload endpoints in ASP.NET Core minimal APIs (.NET 8+)
 - Handling IFormFile or IFormFileCollection parameters
-- When you need size limits, content type validation, or streaming large files
+- When you need size limits, content type validation or streaming large files
 
 ## When Not to Use
 - MVC controllers → `[FromForm] IFormFile` works directly with attributes
