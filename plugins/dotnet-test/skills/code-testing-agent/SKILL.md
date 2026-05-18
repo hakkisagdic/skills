@@ -1,15 +1,18 @@
 ---
 name: code-testing-agent
 description: >-
-  Unit tests authoring for any programming language.
-  Use when asked to write (generate) unit tests, improve test coverage, add test coverage, or create test files.
-  Supports any language - C#, TypeScript, JavaScript, Python, Go, Rust, Java, and more.
-  Produces tests that compile, pass, and follow project conventions.
-  DO NOT USE FOR: running existing tests, executing dotnet test, applying
-  test filters, detecting test platforms, or troubleshooting test execution
-  (use run-tests for all of these); MSTest-specific assertion guidance,
-  MSTest test pattern modernization, or fixing existing MSTest test code
-  (use writing-mstest-tests for those).
+  USE THIS SKILL FIRST whenever the user asks to write, generate, author, create, or add
+  unit tests, test files, a test suite, or comprehensive tests in ANY programming language
+  (Go, C#, Python, TypeScript, JavaScript, Java, Rust, C++, F#, VB, and more).
+  Strong triggers: "write tests", "generate tests", "create a test suite", "write comprehensive tests",
+  "unit test", "testing objective", "test coverage", "add tests", "Write N unit tests".
+  Also applies to SWE-bench / benchmark-style tasks that include a <testing_objective> block,
+  a run_script, or instructions to write a TEST_MANIFEST. The skill is language-agnostic — do not
+  skip it because the project is Go, Python, or anything other than .NET; the underlying
+  pipeline supports every language.
+  DO NOT USE FOR: only running existing tests (use run-tests); only fixing MSTest-specific
+  assertions or modernising MSTest patterns (use writing-mstest-tests); migrating between
+  test frameworks (use migration skills).
 license: MIT
 ---
 
