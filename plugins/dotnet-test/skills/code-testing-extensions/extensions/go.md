@@ -71,10 +71,21 @@ Go uses package paths derived from the module path in `go.mod`.
 | Integration / build-tag gated | `foo_integration_test.go` | Add `//go:build integration` at top |
 
 - Test files **must** end with `_test.go` — the toolchain ignores other names
-- **Always add tests to the existing `_test.go` file** for the package. Search for `foo_test.go` before creating a new file. Only create a new test file when the package has no existing `_test.go` file.
+- **Always add tests to the existing `_test.go` file** for the package. Search for `foo_test.go` before creating a new file. Only create a new test file when the package has no existing `_test.go` file. If a rubric or task description mentions a specific test file (e.g., `lib/execution_segment_test.go`), add tests to that exact file.
 - A package directory may contain both `package foo` and `package foo_test` test files simultaneously
 - Helpers shared across tests in one package go in `helpers_test.go` — do not export them; put them in the `_test` package only if integration tests in another package need them
 - Imports use the full module path: `import "github.com/org/module/pkg"` — copy the exact module path from `go.mod`
+
+### Discovering Test Helpers
+
+Before writing tests, search the existing `_test.go` files in the package for:
+
+- **Custom comparison helpers**: `cmp.Diff` with package-specific options (e.g., `data.FrameTestCompareOptions()`), custom `Equal` or `Compare` functions
+- **Test helper functions**: Functions like `requireError(t, err, expected)`, `assertFrame(t, got, want)`, or `newTestInstance(t)` used across multiple tests
+- **Test helper types**: Structs like `testDetector`, `mockService`, or builder patterns used for test setup
+- **Channel-based patterns**: Callback verification using `make(chan T)` with timeouts for async operations
+
+If the existing tests use `cmp.Diff` with custom options, you MUST use those same options. If they use `require.EqualError` for error assertions, use that instead of `require.Error` or `require.Contains`.
 
 ## Test Function Signatures
 

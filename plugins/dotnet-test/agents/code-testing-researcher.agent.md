@@ -161,6 +161,8 @@ For each source file in scope, the canonical test file where new tests should go
 - Assertion library: [e.g., testify/require, stdlib testing, pytest assert]
 - Custom helpers used: [e.g., cmp.Diff with options, custom comparison funcs]
 - Test structure: [e.g., table-driven with t.Run subtests, parametrized fixtures]
+- Output capture utilities: [e.g., ContextManagerCaptureOutput for stdout, custom redirect helpers]
+- Error assertion patterns: [e.g., require.EqualError for exact message, assertRaises with exact type]
 
 ## Existing Test Projects
 For each test project found, list:

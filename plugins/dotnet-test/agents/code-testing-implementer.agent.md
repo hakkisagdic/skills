@@ -50,7 +50,15 @@ If the test project is new, register it with the project's build system so the t
 For each test file in your phase:
 
 - **Prefer existing test files**: Search for an existing test file that covers the same source module (e.g., `foo_test.go` for `foo.go`, `test_utils.py` for `utils.py`, `executor_test.go` for `executor.go`). **Add your tests to the existing file** rather than creating a new one. Only create a new test file when no canonical test file exists for the module under test.
+- **Search within the file for the right location**: When adding to an existing test file, read the whole file to find the appropriate section. For `.uts` files, find the section header (e.g., `+ function_name()`) that matches your test topic. For Go test files, add tests near related existing tests. For Python test classes, add methods to the appropriate class.
 - Follow the project's testing patterns — study how existing tests are structured, what helpers they use, and what assertion style they follow
+- **Discover and use repo-specific test utilities**: Before writing tests, search for custom test helpers in the test directory. Look for:
+  - Comparison/diff helpers (e.g., `cmp.Diff` with custom options, `FrameTestCompareOptions`, `line_comparison_rewrap`)
+  - Output capture utilities (e.g., `ContextManagerCaptureOutput`, custom stdout redirect helpers)
+  - Error assertion helpers (e.g., `require.EqualError` vs `require.Error`, exact message matching patterns)
+  - Custom assertion methods on test base classes (e.g., `self.ae` as shorthand for assertEqual)
+  - Test data builders or fixtures used by existing tests
+  If the existing tests use specific helpers, you MUST use the same helpers — do not fall back to basic assertion functions
 - **Adopt repo-specific test idioms**: If existing tests use table-driven patterns (Go), parametrized fixtures (Python), or custom assertion/comparison helpers, use those same patterns in your new tests
 - **Match the naming convention**: Study existing test names in the repo. Copy the exact naming pattern (e.g., `test_[function]_[scenario]`, `Test<Function>_<Scenario>`, `= function() description`) — do not invent a new pattern
 - Include tests for: happy path, edge cases (empty, null, boundary), error conditions

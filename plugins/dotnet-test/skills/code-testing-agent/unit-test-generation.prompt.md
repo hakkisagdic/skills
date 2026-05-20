@@ -119,6 +119,18 @@ To write strong assertions, you must **compute the expected output yourself** fr
 - If existing tests use **specific assertion helpers** (e.g., `require.EqualError`, `cmp.Diff` with custom options), use those same helpers — do not fall back to basic `assert` or `require.Equal`
 - If existing tests follow a **specific naming convention** (e.g., `test_[function]_[scenario]`, `= function() description`), follow it exactly — do not invent your own
 
+### Discovering Test Utilities
+
+Before writing tests, search the repo's test files for utilities you should use:
+
+- **Output capture**: helpers that capture stdout/stderr (e.g., `ContextManagerCaptureOutput`, redirect utilities)
+- **Comparison helpers**: deep comparison functions with custom options (e.g., `cmp.Diff` with `FrameTestCompareOptions()`)
+- **Error assertion patterns**: exact-message assertion helpers (e.g., `require.EqualError` vs `require.Error`)
+- **Test data helpers**: builder patterns, fixture factories, or test-specific struct types (e.g., `testDetector`)
+- **Base test classes**: custom TestCase subclasses with shorthand assertion methods (e.g., `self.ae` for assertEqual)
+
+If existing tests use these utilities, you MUST use them too — do not reinvent them or fall back to basic assertions.
+
 ## Coverage Types
 
 | Type                  | Examples                                                            |

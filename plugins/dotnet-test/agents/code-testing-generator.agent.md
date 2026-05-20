@@ -27,7 +27,7 @@ You coordinate test generation using the Research-Plan-Implement (RPI) pipeline.
 
 Understand what the user wants: scope (project, files, classes), priority areas, framework preferences. If clear, proceed directly. If the user provides no details or a very basic prompt (e.g., "generate tests"), use [unit-test-generation.prompt.md](../skills/code-testing-agent/unit-test-generation.prompt.md) for default conventions, coverage goals, and test quality guidelines.
 
-**Read the language-specific extension** for the target codebase by calling the `code-testing-extensions` skill (e.g., read `dotnet.md` for .NET/C# projects). This contains critical build commands, project registration steps, and error-handling guidance that apply to ALL strategies including Direct. You MUST read this file before writing any code.
+**Load the language-specific extension** before writing any code. Call the `code-testing-extensions` skill to discover available extension files, then read the file for the target language (e.g., `go.md` for Go, `python.md` for Python, `typescript.md` for TypeScript/JavaScript, `dotnet.md` for .NET/C#). If the skill is unavailable, look for extension files at `plugins/dotnet-test/skills/code-testing-extensions/extensions/` in the installed plugin directory. These files contain critical language-specific guidance on test file placement, build/test commands, assertion idioms, and common errors.
 
 ### Step 2: Choose Execution Strategy
 
@@ -35,9 +35,32 @@ Based on the request scope, pick exactly one strategy and follow it:
 
 | Strategy | When to use | What to do |
 | ---------- | ------------- | ------------ |
-| **Direct** | A small, self-contained request (e.g., tests for a single function or class) that you can complete without sub-agents | **First, extract every testable requirement** from the user request — list each specific behavior, scenario, edge case, error condition, or output format mentioned. This becomes your test checklist. Follow the codebase conventions on test file structure, naming, style, and testing approaches. Reuse existing test projects and test files when possible — if the code under test already has tests, add new tests to the same file or test project. **Always search for the canonical test file** for the module under test (e.g., `foo_test.go` for `foo.go`, `test_utils.py` for `utils.py`) and add tests there. Only create a new test file when no canonical file is named or discoverable for the symbol under test. **Study existing test patterns** in the repo: naming conventions, assertion helpers, test structure (table-driven, parametrized, etc.) and replicate them exactly. **Read the production code** to understand exact return values for your chosen inputs — compute expected values by tracing the code, then assert on those exact values (not types, not ranges, not non-None checks). Write the tests immediately. **Run them right away** — if any test fails, read the production code, fix the assertion, and re-run before writing more tests. **Verify your checklist** — after all tests pass, walk through every requirement from the original request and confirm each one has a corresponding test with concrete assertions. If any requirement is uncovered, add tests for it. Skip Steps 3-5 (research, plan, implement sub-agents). Then proceed to Steps 6-9 for validation and reporting. |
+| **Direct** | A small, self-contained request (e.g., tests for a single function or class) that you can complete without sub-agents | Follow the Direct Strategy Rules below. Skip Steps 3-5 (research, plan, implement sub-agents). Then proceed to Steps 6-9 for validation and reporting. |
 | **Single pass** | A moderate scope (couple projects or modules) that a single Research → Plan → Implement cycle can cover | Execute Steps 3-8 once, then proceed to Step 9. |
 | **Iterative** | A large scope or ambitious coverage target that one pass cannot satisfy | Execute Steps 3-8, then re-evaluate coverage. If the target is not met, repeat Steps 3-8 with a narrowed focus on remaining gaps. Use unique names for each iteration's `.testagent/` documents (e.g., `research-2.md`, `plan-2.md`) so earlier results are not overwritten. Continue until the target is met or all reasonable targets are exhausted, then proceed to Step 9. |
+
+#### Direct Strategy Rules
+
+1. **Extract every testable requirement** from the user request — list each specific behavior, scenario, edge case, error condition, or output format mentioned. Each one becomes a test or table-driven row. This is your checklist.
+
+2. **Find and use the canonical test file** — search for the existing test file that covers the module under test (e.g., `foo_test.go` for `foo.go`, `test_utils.py` for `utils.py`, `module.test.ts` for `module.ts`). **Add tests to that existing file** rather than creating a new one. For `.uts` files (UTscapy), find the right section in the existing `.uts` file and append tests there.
+
+3. **Study existing test patterns** — read 3-5 existing tests in the repo and replicate:
+   - **Naming convention**: Copy the exact pattern (e.g., `TestFoo_Scenario`, `test_foo_scenario`, `= foo() description`)
+   - **Test structure**: If existing tests use table-driven patterns (Go `[]struct` + `t.Run`), use the same pattern — do not use individual test functions
+   - **Assertion helpers**: If existing tests use specific helpers (`require.EqualError`, `cmp.Diff` with custom options, `ContextManagerCaptureOutput`, `self.ae`), use those exact helpers — do not fall back to basic assertions
+   - **Test helper types**: Search for custom test structs, builder patterns, or mock types used across tests
+
+4. **Read the production code and compute expected values** — for each test, trace the function's algorithm with your chosen input to determine the exact return value. Assert on that exact value:
+   - **WRONG**: `assert isinstance(result, int)`, `assert result is not None`, `assert len(results) > 0`
+   - **RIGHT**: `assert result == 0x0A06`, `assert result == "expected_string"`, `require.Equal(t, expected, got)`
+   - Ask: "If I deleted the function body, would this test still pass?" If yes, the assertion is too weak.
+
+5. **Cover error paths** — find every `return err`, `raise`, `panic`, `throw` in the function body. Each one needs a test that triggers it with a specific input and asserts on the exact error message/type.
+
+6. **Write tests and run them immediately** — if any test fails, read the production code, fix the assertion (not the production code), and re-run.
+
+7. **Verify your checklist** — after all tests pass, walk through every requirement from the original request. If any is uncovered, add tests for it before finishing.
 
 **Default to Direct** unless the request explicitly mentions multiple files, modules, or an entire project. Most test generation requests — including "generate tests for function X", "add tests covering these scenarios", and "write unit tests for this class" — should use Direct strategy. The full Research → Plan → Implement pipeline is only needed when the scope spans multiple unrelated source files.
 

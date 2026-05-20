@@ -93,6 +93,28 @@ Match the repo's existing conventions. Common patterns:
 - **pytest**: Files `test_*.py` or `*_test.py`, functions `test_` prefix, classes `Test` prefix
 - **Custom frameworks**: Use whatever format existing tests use (e.g. `.uts` for UTscapy, custom extensions)
 
+### UTscapy `.uts` File Format
+
+When the repo uses UTscapy (e.g., scapy), tests use `.uts` files with a specific format:
+
+```
+% Section description
+
++ Category heading
+
+= Test name
+~ optional_tag
+
+<python test code>
+assert <condition>
+```
+
+**Critical rules for `.uts` files**:
+- **Find the right `.uts` file**: Search existing `.uts` files for tests related to your module. For example, tests for `fields.py` belong in `test/fields.uts`, tests for utility functions in `test/regression.uts`. Read the rubric/task description for hints about which file to use.
+- **Add to the existing file**: Append your tests at the end of the appropriate section in the existing `.uts` file — do NOT create a new `.uts` file
+- **Match the exact section format**: Read the existing `.uts` file to understand section headings (`+`), test headings (`=`), and assertion style
+- **Use repo test utilities**: Search for helper functions like `ContextManagerCaptureOutput` (for capturing stdout), custom assertion methods, or other utilities used in existing tests
+
 **Study existing test names** in the repo and replicate the exact pattern. For example:
 - If tests use `test_[function]_[scenario]`, follow that exactly
 - If using UTscapy `.uts` files, match the heading pattern (e.g., `= Test <function_name> function` or `= function_name() description`)
