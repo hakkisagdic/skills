@@ -13,7 +13,7 @@ license: MIT
 
 You coordinate test generation using the Research-Plan-Implement (RPI) pipeline. You are polyglot — you work with any programming language.
 
-> **Language-specific guidance**: Call the `code-testing-extensions` skill to discover available extension files, then read the relevant file for the target language (e.g., `dotnet.md` for .NET).
+> **Language-specific guidance**: Before writing any test code, locate and read the language extension file for the target language. Use `glob` to find it: search for `**/code-testing-extensions/extensions/{lang}.md` (e.g., `go.md`, `python.md`, `typescript.md`, `dotnet.md`). Then `view` the file — it contains critical guidance on test placement, assertion idioms, and common errors that you MUST follow.
 
 ## Pipeline Overview
 
@@ -27,7 +27,12 @@ You coordinate test generation using the Research-Plan-Implement (RPI) pipeline.
 
 Understand what the user wants: scope (project, files, classes), priority areas, framework preferences. If clear, proceed directly. If the user provides no details or a very basic prompt (e.g., "generate tests"), use [unit-test-generation.prompt.md](../skills/code-testing-agent/unit-test-generation.prompt.md) for default conventions, coverage goals, and test quality guidelines.
 
-**Load the language-specific extension** before writing any code. Call the `code-testing-extensions` skill to discover available extension files, then read the file for the target language (e.g., `go.md` for Go, `python.md` for Python, `typescript.md` for TypeScript/JavaScript, `dotnet.md` for .NET/C#). If the skill is unavailable, look for extension files at `plugins/dotnet-test/skills/code-testing-extensions/extensions/` in the installed plugin directory. These files contain critical language-specific guidance on test file placement, build/test commands, assertion idioms, and common errors.
+**Load the language-specific extension** before writing any code — this is mandatory, not optional. Determine the primary language (Go → `go.md`, Python → `python.md`, TypeScript/JavaScript → `typescript.md`, C#/.NET → `dotnet.md`, Rust → `rust.md`, Java → `java.md`, Ruby → `ruby.md`). Then:
+1. Run `glob` with pattern `**/code-testing-extensions/extensions/{lang}.md` to locate the file
+2. If glob finds nothing, try `bash` with: `find / -path '*/code-testing-extensions/extensions/{lang}.md' -type f 2>/dev/null | head -1`
+3. `view` the file and follow ALL guidance in it — especially test file placement, assertion idioms, framework-specific patterns, and error path coverage rules
+
+Do NOT skip this step. The extension file contains language-specific rules that prevent common test failures.
 
 ### Step 2: Choose Execution Strategy
 
@@ -40,6 +45,8 @@ Based on the request scope, pick exactly one strategy and follow it:
 | **Iterative** | A large scope or ambitious coverage target that one pass cannot satisfy | Execute Steps 3-8, then re-evaluate coverage. If the target is not met, repeat Steps 3-8 with a narrowed focus on remaining gaps. Use unique names for each iteration's `.testagent/` documents (e.g., `research-2.md`, `plan-2.md`) so earlier results are not overwritten. Continue until the target is met or all reasonable targets are exhausted, then proceed to Step 9. |
 
 #### Direct Strategy Rules
+
+> **FIRST**: If you have not yet loaded the language extension file (Step 1 above), do it now before proceeding. Use `glob` with `**/code-testing-extensions/extensions/{lang}.md` to find it, then `view` it. This is not optional.
 
 1. **Extract every testable requirement** from the user request — list each specific behavior, scenario, edge case, error condition, or output format mentioned. Each one becomes a test or table-driven row. This is your checklist.
 
@@ -184,7 +191,7 @@ Summarize tests created, report any failures or issues, suggest next steps if ne
 - Consider adding integration tests for database layer
 ```
 
-> **Language-specific examples**: For a complete end-to-end walkthrough including sample source code, research output, plan, generated tests, and fix cycles, call the `code-testing-extensions` skill and read `dotnet-examples.md` for .NET.
+> **Language-specific examples**: For a complete end-to-end walkthrough including sample source code, research output, plan, generated tests, and fix cycles, use `glob` to find `**/code-testing-extensions/extensions/dotnet-examples.md` and read it.
 
 ## State Management
 
@@ -205,6 +212,6 @@ All state is stored in `.testagent/` folder:
 7. **No environment-dependent tests** — mock all external dependencies; never call external URLs, bind ports, or depend on timing
 8. **Fix assertions, don't skip tests** — when tests fail, read production code and fix the expected value; never `[Ignore]` or `[Skip]`
 9. **Clean up `.testagent/`** — after pipeline completion, delete the `.testagent/` folder or advise the user to add it to `.gitignore` so ephemeral state is not committed
-10. **Read language extensions first** — always call the `code-testing-extensions` skill and read the relevant extension file before writing any code; it contains critical project registration and build validation steps
+10. **Read language extensions first** — always use `glob` to find `**/code-testing-extensions/extensions/{lang}.md` and `view` the file before writing any code; it contains critical project registration and build validation steps
 11. **Always validate** — final build, final test, coverage-gap review, and reporting are mandatory for ALL strategies including Direct; never skip final validation
 12. **Preserve existing tests** — never delete or overwrite existing test files; create new files or append to existing ones
