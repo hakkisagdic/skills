@@ -54,7 +54,7 @@ scenarios:
 
   - name: "Author a multi-step wizard with shared state"
     prompt: |
-      Write a set of Blazor components for a checkout wizard. Here are the models:
+      Author a set of Blazor components for a checkout wizard using proper parameter passing and EventCallback patterns. Here are the models:
 
       ```csharp
       public class ShippingInfo
@@ -78,12 +78,12 @@ scenarios:
       }
       ```
 
-      Build three components:
-      1. CheckoutWizard — manages which step is active and holds the order state
-      2. ShippingStep — collects shipping address fields, has a "Next" button. Name and Address must not be empty to proceed.
-      3. PaymentStep — collects payment method, has "Back" and "Place Order" buttons
+      Write the .razor component code for:
+      1. CheckoutWizard.razor — manages which step is active and holds the order state
+      2. ShippingStep.razor — collects shipping address fields, has a "Next" button. Name and Address must not be empty to proceed.
+      3. PaymentStep.razor — collects payment method, has "Back" and "Place Order" buttons
 
-      When "Place Order" is clicked, the parent of CheckoutWizard needs to receive the completed order.
+      When "Place Order" is clicked, the parent of CheckoutWizard needs to receive the completed order via EventCallback.
     assertions:
       - type: "output_contains"
         value: "EventCallback"

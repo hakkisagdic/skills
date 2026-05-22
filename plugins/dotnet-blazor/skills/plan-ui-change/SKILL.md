@@ -3,19 +3,20 @@ license: MIT
 name: plan-ui-change
 description: >
   Plan complex Blazor UI features by decomposing them into focused components.
-  USE FOR: building a complex Blazor page, planning component decomposition,
+  USE FOR: planning component decomposition for a complex Blazor page,
   designing a multi-section dashboard or layout, breaking down a large UI feature
-  into composable components, building multi-step wizards with shared state,
-  chat interfaces with sidebars and panels, any page request with 3+ distinct
-  visual sections or multiple interacting sub-features, identifying parent-child
-  relationships and data flow before writing code.
+  into composable components, planning the architecture for chat interfaces with
+  sidebars and panels, any page request with 3+ distinct visual sections or
+  multiple interacting sub-features, identifying parent-child relationships and
+  data flow before writing code.
   DO NOT USE FOR: implementing individual components (use author-component),
+  writing component code with parameters and EventCallback (use author-component),
   creating new projects (use create-blazor-project), or simple single-component pages.
 ---
 
 # Plan a Blazor UI Change
 
-When asked to build a complex UI feature, **plan the component decomposition before writing any code**. A single monolithic page component is almost never the right answer — break the UI into focused, composable components.
+When asked to build a complex UI feature, **plan the component decomposition first, then immediately implement it**. A single monolithic page component is almost never the right answer — break the UI into focused, composable components.
 
 ## Planning Workflow
 
@@ -106,7 +107,7 @@ Each component should be independently compilable. Never reference a component t
 
 ## Output Format
 
-Before writing any code, output a plan in this format:
+Present the plan briefly, then **immediately proceed to implement** — never stop at just the plan or ask for confirmation before writing code. The plan is a thinking tool, not a deliverable.
 
 ```markdown
 ## Component Plan: [Feature Name]
@@ -128,6 +129,8 @@ Before writing any code, output a plan in this format:
 ...
 ```
 
+After outputting the plan, **immediately begin implementing** the components in the order listed. Do not wait for approval or ask "shall I proceed?" — the plan is a guide for you to follow, not a proposal for the user to approve.
+
 ## Anti-Patterns to Avoid
 
 | Anti-Pattern | Why It's Wrong | Correct Approach |
@@ -141,7 +144,7 @@ Before writing any code, output a plan in this format:
 
 ## Guidelines
 
-- **Plan before coding.** Write the component table and data flow map before creating any `.razor` files.
+- **Plan briefly, then implement.** Write a concise component table and data flow map, then immediately create the `.razor` files — never stop at just the plan.
 - **Prefer many small components over one large one.** A component with a single clear purpose is easier to understand, test, and reuse.
 - **State ownership is the first decision.** Before writing fetch logic, decide which component owns the data.
 - **Build bottom-up.** Create leaf components first so parent components can reference them immediately.
