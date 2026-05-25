@@ -28,6 +28,12 @@ name: evaluation
 on:
   # Manual trigger for one-off deploys (e.g., AGENTVIZ SPA update)
   workflow_dispatch:
+    inputs:
+      plugin:
+        description: 'Plugin to evaluate (e.g. dotnet-test, dotnet-msbuild)'
+        required: true
+        default: 'dotnet-test'
+        type: string
 
   # Same-repo PRs: post initial status
   pull_request:
@@ -345,9 +351,9 @@ jobs:
           $entries = @()
           $plugins = @()
 
-          # TEMP: workflow_dispatch path — evaluate ONLY dotnet-msbuild (for MCP parallelism testing)
+          # workflow_dispatch path — evaluate ONLY the plugin selected via input.
           if ("${{ github.event_name }}" -eq "workflow_dispatch") {
-            $plugins = @('dotnet-msbuild')
+            $plugins = @('${{ github.event.inputs.plugin }}')
             $entries = @($plugins | ForEach-Object {
               @{ name = $_; plugin = $_; skills_path = "plugins/$_/skills" }
             })
