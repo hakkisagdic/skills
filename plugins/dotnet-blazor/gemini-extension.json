@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-blazor",
+  "description": "Skills for Blazor development: component authoring, interactivity, and web application patterns.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

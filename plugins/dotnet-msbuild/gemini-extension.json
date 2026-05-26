@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-msbuild",
+  "description": "Comprehensive MSBuild and .NET build skills: failure diagnosis, performance optimization, code quality, and modernization.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

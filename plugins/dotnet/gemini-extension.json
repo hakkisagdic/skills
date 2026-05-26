@@ -1,0 +1,8 @@
+{
+  "name": "dotnet",
+  "description": "Common everyday C#/.NET coding skills. Expected to be useful to all .NET developers.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

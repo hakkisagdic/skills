@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-diag",
+  "description": "Skills for .NET performance investigations, debugging, and incident analysis.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-aspnet",
+  "description": "ASP.NET Core web development skills including middleware, endpoints, real-time communication, and API patterns.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

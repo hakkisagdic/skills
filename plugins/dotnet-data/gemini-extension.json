@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-data",
+  "description": "Skills for .NET data access and Entity Framework related tasks.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}

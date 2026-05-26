@@ -1,0 +1,8 @@
+{
+  "name": "dotnet-upgrade",
+  "description": "Skills for migrating and upgrading .NET projects across framework versions, language features, and compatibility targets.",
+  "version": "0.1.0",
+  "author": {
+    "name": ".NET Team at Microsoft"
+  }
+}
