@@ -1,6 +1,6 @@
 {
   "name": "dotnet-experimental",
-  "description": "Experimental skills under active evaluation that may change or graduate to stable plugins.",
+  "description": "Skills for auditing mock usage, consolidating boilerplates and optimizing hot paths with SIMD.",
   "version": "0.1.0",
   "author": {
     "name": ".NET Team at Microsoft"

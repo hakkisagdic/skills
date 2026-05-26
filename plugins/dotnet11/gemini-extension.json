@@ -1,6 +1,6 @@
 {
   "name": "dotnet11",
-  "description": "Skills for .NET 11 APIs and language features.",
+  "description": "Skills for new .NET 11 APIs and language features.",
   "version": "0.1.0",
   "author": {
     "name": ".NET Team at Microsoft"

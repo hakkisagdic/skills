@@ -10,6 +10,21 @@
       "description": "Collection of core .NET skills for handling common .NET coding tasks."
     },
     {
+      "name": "dotnet-ai",
+      "source": "./plugins/dotnet-ai",
+      "description": "AI and ML skills for .NET: technology selection, LLM integration, agentic workflows, and RAG pipelines."
+    },
+    {
+      "name": "dotnet-aspnet",
+      "source": "./plugins/dotnet-aspnet",
+      "description": "ASP.NET Core web development skills including middleware, endpoints, and API patterns."
+    },
+    {
+      "name": "dotnet-blazor",
+      "source": "./plugins/dotnet-blazor",
+      "description": "Skills for Blazor development: component authoring, interactivity, and web application patterns."
+    },
+    {
       "name": "dotnet-data",
       "source": "./plugins/dotnet-data",
       "description": "Skills for .NET data access and Entity Framework related tasks."
@@ -20,9 +35,19 @@
       "description": "Skills for .NET performance investigations, debugging, and incident analysis."
     },
     {
+      "name": "dotnet-experimental",
+      "source": "./plugins/dotnet-experimental",
+      "description": "Skills for auditing mock usage, consolidating boilerplates and optimizing hot paths with SIMD."
+    },
+    {
+      "name": "dotnet-maui",
+      "source": "./plugins/dotnet-maui",
+      "description": "Skills for .NET MAUI development: environment setup, diagnostics, layout, and theming."
+    },
+    {
       "name": "dotnet-msbuild",
       "source": "./plugins/dotnet-msbuild",
-      "description": "Comprehensive MSBuild and .NET build skills: failure diagnosis, performance optimization, code quality, and modernization."
+      "description": "Comprehensive MSBuild and .NET build skills: failure diagnosis, performance optimization, and modernization."
     },
     {
       "name": "dotnet-nuget",
@@ -30,39 +55,19 @@
       "description": "NuGet and .NET package management: dependency management and modernization."
     },
     {
-      "name": "dotnet-upgrade",
-      "source": "./plugins/dotnet-upgrade",
-      "description": "Skills for migrating and upgrading .NET projects across framework versions, language features, and compatibility targets."
-    },
-    {
-      "name": "dotnet-maui",
-      "source": "./plugins/dotnet-maui",
-      "description": "Skills for .NET MAUI development: environment setup, diagnostics, troubleshooting, navigation, data binding, dependency injection, layout, and theming."
-    },
-    {
-      "name": "dotnet-ai",
-      "source": "./plugins/dotnet-ai",
-      "description": "AI and ML skills for .NET: technology selection, LLM integration, agentic workflows, RAG pipelines, MCP, and classic ML with ML.NET."
-    },
-    {
       "name": "dotnet-template-engine",
       "source": "./plugins/dotnet-template-engine",
-      "description": ".NET Template Engine skills: template discovery, project scaffolding, and template authoring."
+      "description": "Skills for template discovery, project scaffolding, and template authoring."
     },
     {
       "name": "dotnet-test",
       "source": "./plugins/dotnet-test",
-      "description": "Skills for running, diagnosing, and migrating .NET tests: test execution, filtering, platform detection, and MSTest workflows."
+      "description": "Skills for running, diagnosing, and migrating .NET tests."
     },
     {
-      "name": "dotnet-aspnet",
-      "source": "./plugins/dotnet-aspnet",
-      "description": "ASP.NET Core web development skills including middleware, endpoints, real-time communication, and API patterns."
-    },
-    {
-      "name": "dotnet-blazor",
-      "source": "./plugins/dotnet-blazor",
-      "description": "Skills for Blazor development: component authoring, interactivity, and web application patterns."
+      "name": "dotnet-upgrade",
+      "source": "./plugins/dotnet-upgrade",
+      "description": "Skills for migrating and upgrading .NET projects across framework versions and compatibility targets."
     },
     {
       "name": "dotnet11",

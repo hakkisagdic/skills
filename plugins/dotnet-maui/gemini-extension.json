@@ -1,6 +1,6 @@
 {
   "name": "dotnet-maui",
-  "description": "Skills for .NET MAUI development: environment setup, diagnostics, troubleshooting, navigation, data binding, dependency injection, layout, and theming.",
+  "description": "Skills for .NET MAUI development: environment setup, diagnostics, layout, and theming.",
   "version": "0.1.0",
   "author": {
     "name": ".NET Team at Microsoft"

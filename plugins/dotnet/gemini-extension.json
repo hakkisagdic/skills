@@ -1,6 +1,6 @@
 {
   "name": "dotnet",
-  "description": "Common everyday C#/.NET coding skills. Expected to be useful to all .NET developers.",
+  "description": "Collection of core .NET skills for handling common .NET coding tasks.",
   "version": "0.1.0",
   "author": {
     "name": ".NET Team at Microsoft"

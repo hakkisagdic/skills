@@ -1,6 +1,6 @@
 {
   "name": "dotnet-ai",
-  "description": "AI and ML skills for .NET: technology selection, LLM integration, agentic workflows, RAG pipelines, MCP, and classic ML with ML.NET.",
+  "description": "AI and ML skills for .NET: technology selection, LLM integration, agentic workflows, and RAG pipelines.",
   "version": "0.1.0",
   "author": {
     "name": ".NET Team at Microsoft"
