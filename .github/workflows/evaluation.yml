@@ -862,11 +862,14 @@ jobs:
                 "${PR_NUMBER}" "${{ github.repository }}" "${RUN_ID}" "${{ github.repository }}" "${{ github.repository }}" "${{ needs.gate.outputs.head_sha }}")
             fi
 
-            # PR comment: simplified table + "Full results" link
+            # PR comment: simplified table + "Full results" link + investigation prompt
             {
               cat simplified-body.md
               echo ""
               echo "[🔍 Full Results - additional metrics and failure investigation steps]($RUN_URL)"
+              if [ -n "$INVESTIGATE_PROMPT" ]; then
+                echo "$INVESTIGATE_PROMPT"
+              fi
             } > consolidated-comment.md
 
             # Append AGENTVIZ replay link if session data was published
