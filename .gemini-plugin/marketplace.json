@@ -70,8 +70,8 @@
       "description": "Skills for migrating and upgrading .NET projects across framework versions and compatibility targets."
     },
     {
-      "name": "dotnet11",
-      "source": "./plugins/dotnet11",
+      "name": "dotnet-11",
+      "source": "./plugins/dotnet-11",
       "description": "Skills for new .NET 11 APIs and language features."
     }
   ]

@@ -1,4 +1,4 @@
-# dotnet11
+# dotnet-11
 
 Skills focused on new APIs and language features introduced in .NET 11.
 

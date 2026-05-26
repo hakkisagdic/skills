@@ -1,0 +1,6 @@
+{
+  "name": "dotnet-11",
+  "version": "0.1.0",
+  "description": "Skills for new .NET 11 APIs and language features.",
+  "skills": ["./skills/"]
+}
